@@ -25,7 +25,7 @@ const Navbar = () => {
                       <KeyboardArrowDownIcon />  
                     </div>
                     <div className="item">
-                      <Link className="link" to="/products/1">Women</Link> 
+                      <Link className="link" to="/products/1">Bedsheets</Link> 
                     </div>
                 </div>
                 <div className="center">
