@@ -7,36 +7,36 @@ import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import "./app.scss"
 
-const Layout = () =>{
+const Layout = () => {
   return (
     <div className="app">
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<Layout/>,
-    children:[
+    path: "/",
+    element: <Layout />,
+    children: [
       {
-        path:"/",
-        element:<Home />
+        path: "/",
+        element: <Home />,
       },
       {
-        path:"/products/:id",
-        element:<Products />
+        path: "/products/:id",
+        element: <Products />,
       },
       {
-        path:"/product/:id",
-        element:<Product />
-      }
-    ]
+        path: "/product/:id",
+        element: <Product />,
+      },
+    ],
   },
-])
+]);
 
 function App() {
   return (

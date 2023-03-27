@@ -68,10 +68,7 @@ const Product = () => {
               <button onClick={() => setQuantity((prev) => prev + 1)}>+</button>
             </div>
             <button
-              className="add"
-              onClick={() =>
-                dispatch(
-                  addToCart({
+              className="add" onClick={()=>dispatch(addToCart({
                     id: data.id,
                     title: data.attributes.title,
                     desc: data.attributes.desc,
